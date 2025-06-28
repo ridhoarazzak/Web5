@@ -1,4 +1,4 @@
-// src/app/lodging/[id]/page.js
+
 // This is a Server Component responsible for fetching lodging data
 // and providing static parameters for SSG.
 
