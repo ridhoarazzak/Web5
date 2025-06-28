@@ -1,8 +1,9 @@
 // src/components/Header.jsx
-"use client"; // This component needs to be a Client Component because it uses Framer Motion.
+"use client"; // This component needs to be a Client Component because it uses Framer Motion and will contain UserDisplay.
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import UserDisplay from './UserDisplay'; // Import UserDisplay component
 
 export default function Header() {
   return (
@@ -19,7 +20,7 @@ export default function Header() {
           Green Coffee
         </Link>
         {/* Navigation links */}
-        <ul className="flex space-x-8">
+        <ul className="flex space-x-8 items-center"> {/* Added items-center for vertical alignment */}
           <li>
             <Link href="/" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               Beranda
@@ -34,6 +35,10 @@ export default function Header() {
             <Link href="/contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               Kontak
             </Link>
+          </li>
+          {/* Display User ID */}
+          <li>
+            <UserDisplay />
           </li>
         </ul>
       </nav>
