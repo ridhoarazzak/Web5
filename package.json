@@ -1,4 +1,4 @@
-// package.json
+
 
 {
   "name": "green-coffee-app",
@@ -14,7 +14,8 @@
     "framer-motion": "^11.3.17",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "firebase": "^10.12.3" // Tambahkan baris ini untuk Firebase
   },
   "devDependencies": {
     "postcss": "^8",
